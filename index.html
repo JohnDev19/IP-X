@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-X</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="toggle-container">
+            <label class="toggle-switch">
+                <input type="checkbox" id="darkModeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+        <h1>Your IP Address</h1>
+        <div class="card">
+            <div class="ip-address" id="ipAddress">Loading...</div>
+        </div>
+        <div class="card">
+            <h2>IP Details</h2>
+            <div class="info-grid" id="ipInfo"></div>
+        </div>
+        <div class="card">
+            <h2>Geolocation</h2>
+            <div id="map"></div>
+        </div>
+        <div class="card">
+            <h2>Network Speed Test</h2>
+            <button id="startSpeedTest">Start Speed Test</button>
+            <div class="speed-test">
+                <div class="speed-item">
+                    <div class="speed-value" id="downloadSpeed">-</div>
+                    <div>Download (Mbps)</div>
+                </div>
+                <div class="speed-item">
+                    <div class="speed-value" id="uploadSpeed">-</div>
+                    <div>Upload (Mbps)</div>
+                </div>
+                <div class="speed-item">
+                    <div class="speed-value" id="ping">-</div>
+                    <div>Ping (ms)</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <h2>Browser & Device Information</h2>
+            <div class="info-grid" id="browserInfo"></div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css" />
+
+    <script src="script.js"></script>
+</body>
+</html>
