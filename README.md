@@ -10,9 +10,6 @@ IP-X is a web application that provides comprehensive information about your IP 
 - Network speed test for download/upload speeds and ping
 - Browser and device information including OS details
 
-## Screenshot
-![IP-X](screenshot.png)
-
 ## Installation
 1. Clone the repository:
     ```bash
